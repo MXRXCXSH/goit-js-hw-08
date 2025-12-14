@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width: 360px;
+  height: 200px;
+}
+img:hover {
+  width: 376px;
+  height: 208px;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  user-select: none;
+  list-style: none;
+  width: 1128px;
+  height: 648px;
+  padding: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-item {
+  list-style: none;
+  width: 376px;
+  height: 208px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.large-image {
+  max-width: 1112px;
+  max-height: 640px;
+  background: rgba(46, 47, 66, 0.8);
+}
